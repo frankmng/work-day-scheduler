@@ -74,6 +74,7 @@ textarea {
   max-width: 100%;
 }
 .row {
+  white-space: nowrap;
   padding: 0 10px;
 }
 
@@ -87,4 +88,13 @@ textarea {
 }
 .col-12 {
   margin: auto;
+}
+
+.textarea2 {
+  border: 1px solid black;
+}
+
+.past-hours {
+  color:white;
+   background: #b1b1b1; 
 }
