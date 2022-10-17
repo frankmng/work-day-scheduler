@@ -69,3 +69,22 @@ textarea {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+.container {
+  max-width: 100%;
+}
+.row {
+  padding: 0 10px;
+}
+
+.col-form-label {
+  border-top: 1px dashed black;
+  border-right: 1px solid black;
+}
+
+.btn {
+  border-radius: 0 15% 15% 0;
+}
+.col-12 {
+  margin: auto;
+}
