@@ -7,7 +7,8 @@ var textArea6 = $('#textarea6');
 var textArea7 = $('#textarea7');
 var textArea8 = $('#textarea8');
 var textArea9 = $('#textarea9');
-var formEl = $('#events-form');
+
+var formEl1 = $('#events-form1');
 var formEl2 = $('#events-form2');
 var formEl3 = $('#events-form3');
 var formEl4 = $('#events-form4');
@@ -135,12 +136,12 @@ var saveEvent = function (event) {
 
   };
 
-formEl.on('submit', handleEventSubmit);
+formEl1.on('submit', handleEventSubmit);
 formEl2.on('submit', handleEventSubmit);
-formEl3.on('submit', handleEventSubmit)
-formEl4.on('submit', handleEventSubmit)
-formEl5.on('submit', handleEventSubmit)
-formEl6.on('submit', handleEventSubmit)
-formEl7.on('submit', handleEventSubmit)
-formEl8.on('submit', handleEventSubmit)
-formEl9.on('submit', handleEventSubmit)
+formEl3.on('submit', handleEventSubmit);
+formEl4.on('submit', handleEventSubmit);
+formEl5.on('submit', handleEventSubmit);
+formEl6.on('submit', handleEventSubmit);
+formEl7.on('submit', handleEventSubmit);
+formEl8.on('submit', handleEventSubmit);
+formEl9.on('submit', handleEventSubmit);
