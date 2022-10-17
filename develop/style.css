@@ -96,5 +96,19 @@ textarea {
 
 .past-hours {
   color:white;
-   background: #b1b1b1; 
+   background: rgb(255, 144, 144); 
+}
+#event-alert {
+  text-align: center;
+  margin: -10px 0 15px 0;
+}
+span {
+  color:rgb(218, 78, 78);
+  font-family: Monospace;
+}
+span::after {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f00c";
+  color:black;
 }
