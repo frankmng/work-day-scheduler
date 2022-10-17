@@ -85,6 +85,7 @@ textarea {
 
 .btn {
   border-radius: 0 15% 15% 0;
+  background: #3dacd4;
 }
 .col-12 {
   margin: auto;
@@ -111,4 +112,4 @@ span::after {
   font-weight: 900; 
   content: "\f00c";
   color:black;
-}
+} 

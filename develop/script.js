@@ -7,7 +7,8 @@ var textArea6 = $('#textarea6');
 var textArea7 = $('#textarea7');
 var textArea8 = $('#textarea8');
 var textArea9 = $('#textarea9');
-var formEl = $('#events-form');
+
+var formEl1 = $('#events-form1');
 var formEl2 = $('#events-form2');
 var formEl3 = $('#events-form3');
 var formEl4 = $('#events-form4');
@@ -16,10 +17,10 @@ var formEl6 = $('#events-form6');
 var formEl7 = $('#events-form7');
 var formEl8 = $('#events-form8');
 var formEl9 = $('#events-form9');
+var eventAlert = document.querySelector("#event-alert")
 
-
-var eventAlert = $('#event-alert');
-
+// var eventAlert = $('#event-alert');
+eventAlert.style.display="none";
 
 var textArea1Value = document.getElementById("textarea1").value
 var textArea2Value = document.getElementById("textarea2").value
@@ -64,14 +65,14 @@ for (i = 0; i < arrayValue.length; i++) {
         arrayArea[i].css('background', '#b1b1b1');
     }
     else if (arrayValue[i] > hour){
-        arrayArea[i].css('background', 'rgb(149, 228, 149)');
+        arrayArea[i].css('background', '#47d661');
     }
     else if (arrayValue[i] == hour){
-        arrayArea[i].css('background', 'rgb(255, 144, 144)');
+        arrayArea[i].css('background', '#e8665d');
     }
 }
 
-
+// handle the event submission and save to storage
 var handleEventSubmit = function (event) {
     event.preventDefault();    
     
@@ -104,12 +105,17 @@ var handleEventSubmit = function (event) {
     saveEvent(textAreaSubmit7)
     saveEvent(textAreaSubmit8)
     saveEvent(textAreaSubmit9)
+    
+    eventAlert.style.display="block";
 
-    eventAlert.append("Appointment added to <span>localStorage </span>")
+
+    // eventAlert.append("Appointment added to <span>localStorage </span>")
+    // if (eventAlert) {
+
+    // }
 }
-function clearAlert(){
-    eventAlert.textContent = '';
-}
+
+// handle the saved event to populate the timeblock
 var saveEvent = function (event) {
     var event1 = localStorage.getItem(event);
     var event2 = localStorage.getItem(event);
@@ -130,17 +136,15 @@ var saveEvent = function (event) {
     textArea7.textContent = event7;
     textArea8.textContent = event8;
     textArea9.textContent = event9;
-
-    clearAlert()
-
   };
 
-formEl.on('submit', handleEventSubmit);
+// handle the submit button on each timeblock
+formEl1.on('submit', handleEventSubmit);
 formEl2.on('submit', handleEventSubmit);
-formEl3.on('submit', handleEventSubmit)
-formEl4.on('submit', handleEventSubmit)
-formEl5.on('submit', handleEventSubmit)
-formEl6.on('submit', handleEventSubmit)
-formEl7.on('submit', handleEventSubmit)
-formEl8.on('submit', handleEventSubmit)
-formEl9.on('submit', handleEventSubmit)
+formEl3.on('submit', handleEventSubmit);
+formEl4.on('submit', handleEventSubmit);
+formEl5.on('submit', handleEventSubmit);
+formEl6.on('submit', handleEventSubmit);
+formEl7.on('submit', handleEventSubmit);
+formEl8.on('submit', handleEventSubmit);
+formEl9.on('submit', handleEventSubmit);
