@@ -1,6 +1,6 @@
 # work-day-schedular
 
-![work day scheduler](https://raw.githubusercontent.com/frankmng/coding-quiz-challenge/main/develop/images/work-day-scheduler.png)
+![work day scheduler](https://raw.githubusercontent.com/frankmng/work-day-scheduler/main/develop/images/work-day-scheduler.png)
 
 
 ## Description
