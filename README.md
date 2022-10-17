@@ -7,7 +7,7 @@
 
 The purpose of this project is to provide busy employees with a daily planner in order to manage their time effectively through a 9 to 5 work day. The tasks are saved to local storage in order to keep the task name persistent on the calendar. Each time block is colored to show whether the time block is in the past, present or future. A success message will be alerted each time a task is saved successfully.
 
-Link to app: 
+Link to app: https://frankmng.github.io/work-day-scheduler/
 
 ## Installation
 
