@@ -73,6 +73,7 @@ textarea {
 .container {
   max-width: 100%;
 }
+/* style for time block */
 .row {
   white-space: nowrap;
   padding: 0 10px;
@@ -94,11 +95,9 @@ textarea {
 .textarea2 {
   border: 1px solid black;
 }
+/* end style  */
 
-.past-hours {
-  color:white;
-   background: rgb(255, 144, 144); 
-}
+/* style for event alert */
 #event-alert {
   text-align: center;
   margin: -10px 0 15px 0;
@@ -113,3 +112,4 @@ span::after {
   content: "\f00c";
   color:black;
 } 
+/* end style  */

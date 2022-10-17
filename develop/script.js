@@ -1,3 +1,4 @@
+// get textarea elements
 var textArea1 = $('#textarea1');
 var textArea2 = $('#textarea2');
 var textArea3 = $('#textarea3');
@@ -8,6 +9,7 @@ var textArea7 = $('#textarea7');
 var textArea8 = $('#textarea8');
 var textArea9 = $('#textarea9');
 
+// get form elements
 var formEl1 = $('#events-form1');
 var formEl2 = $('#events-form2');
 var formEl3 = $('#events-form3');
@@ -19,7 +21,7 @@ var formEl8 = $('#events-form8');
 var formEl9 = $('#events-form9');
 var eventAlert = document.querySelector("#event-alert")
 
-// var eventAlert = $('#event-alert');
+// toggle alert to none for now
 eventAlert.style.display="none";
 
 var textArea1Value = document.getElementById("textarea1").value
@@ -106,13 +108,8 @@ var handleEventSubmit = function (event) {
     saveEvent(textAreaSubmit8)
     saveEvent(textAreaSubmit9)
     
+    // alert when event has been saved to local storage
     eventAlert.style.display="block";
-
-
-    // eventAlert.append("Appointment added to <span>localStorage </span>")
-    // if (eventAlert) {
-
-    // }
 }
 
 // handle the saved event to populate the timeblock
@@ -138,7 +135,7 @@ var saveEvent = function (event) {
     textArea9.textContent = event9;
   };
 
-// handle the submit button on each timeblock
+// handle the submit button for each time block
 formEl1.on('submit', handleEventSubmit);
 formEl2.on('submit', handleEventSubmit);
 formEl3.on('submit', handleEventSubmit);
