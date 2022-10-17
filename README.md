@@ -5,7 +5,7 @@
 
 ## Description
 
-The purpose of this project is to provide users with a work day scheduler that helps them add tasks to be done throughout a 9-5 work day. The tasks are saved to local storage in order to keep the task name persistent on the calendar. Each time block is colored to show whether the time block is in the past, present or future.
+The purpose of this project is to provide users with a work day scheduler that helps workers and students to add tasks to be done throughout a 9 to 5 work day. The tasks are saved to local storage in order to keep the task name persistent on the calendar. Each time block is colored to show whether the time block is in the past, present or future. A success message will be alerted each time a task is saved successfully.
 
 Link to app: 
 
@@ -15,7 +15,7 @@ N/A
 
 ## Usage
 
-Simply click in the desired timeblock input area (middle column) and write the desired task. Save the task by clicking on the save button at the end of the timeblock and the task will be saved in the timeblock.
+Edit any of the middle input columns of each timeblock and add your desired task. Once done, save the task by clicking on the save button in the last column of the timeblock. When a task is saved successfully, you should get an alert "Appointment added to localStorage" at the top of the screen.
 
 ## Credits
 
